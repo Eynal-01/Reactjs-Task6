@@ -1,31 +1,196 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 6.1% 0px;
+  background-color: rgb(0, 183, 0);
+}
+
+body {
+  background-color: rgb(0, 183, 0);
+}
+
+.label {
+  background-color: transparent;
+  margin-left: 41%;
+  font-size: 350%;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sections-container {
+  background-color: green;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+
+.buy-container {
+  margin: auto;
+  width: 720px;
+}
+
+@media only screen and (max-width: 800px) {
+  .buy-container,
+  .sections-container {
+    width: 90%;
+    margin: auto;
+    gap: 30px;
+  }
+
+  .sections-container > * {
+    margin: auto;
+  }
+
+  .container-fieldset {
+    width: 100% !important;
+    margin: 20px !important;
+  }
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .sections-container * {
+    gap: 5px !important;
+  }
+}
+
+.oil-select-container :nth-child(1) {
+  min-width: 70px;
+  text-align: left;
+}
+
+.oil-select-container :nth-child(2) {
+  width: 120px;
+}
+
+input[type="text"],
+select {
+  padding: 3px;
+  outline: none;
+}
+
+select {
+  width: 130px !important;
+}
+
+input[type="number"] :read-only,
+input {
+  outline: none !important;
+  border-radius: 4px;
+  border: 1px solid #282c34;
+  padding: 3px;
+}
+
+.checkbox-label {
+  min-width: 140px;
+  text-align: left;
+}
+
+.price-display {
+  text-align: center;
+  padding: 10px 0px;
+  font-size: large;
+  color: green;
+  font-family: "Poppins", sans-serif;
+}
+
+.buy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6%;
+}
+
+.buy-container button {
+  border-radius: 10px;
+  background-color: green;
+  width: auto;
+  padding: 10px 60px;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
+
+.buy-container button:hover {
+  background-color: rgb(7, 161, 7);
+}
+
+.oil-input {
+  width: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  height: 100%;
+}
+
+.product-container {
+  margin-top: 10px;
+}
+
+.container-start {
+  margin-top: -25px;
+}
+
+.container-fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+}
+
+fieldset {
+  border-radius: 10px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.product-container {
+  display: flex;
+}
+
+@media only screen and (max-width: 300px) {
+  .container-fieldset {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 318) {
+  * {
+    min-width: none !important;
+  }
+}
+
+.container {
+  width: 100% !important;
+  justify-content: center;
+  padding: 0px !important;
+}
+
+.container-end {
+  width: 100% !important;
 }
 
 @keyframes App-logo-spin {
